@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="This is an overlay that can be used with BeatSaberPlus (mod) for BeatSaber.
+            It takes the data produced by the plugin in order to display them, so you can display them on a record or a stream" />
+
+        <meta property="og:site_name" content="Beat Saber Multiplayer Overlay | By Hyldra Zolxy | For BSPlus !" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Beat Saber Multiplayer Overlay | By Hyldra Zolxy | For BSPlus !" />
+        <meta property="og:description" content="This is an overlay that can be used with BeatSaberPlus (mod) for BeatSaber.
+            It takes the data produced by the plugin in order to display them, so you can display them on a record or a stream" />
+        <meta property="og:url" content="https://mpplus.hyldrazolxy.fr/" />
+        <!-- TODO: Do image and gif for discord and other platforms card -->
+        <!--<meta property="og:image" content="" />-->
+        <!--<meta name="twitter:card" content="summary_large_image" />-->
+
+        <title>Beat Saber Multiplayer Overlay | By Hyldra Zolxy | For BSPlus !</title>
+        <link rel="icon" href="./pictures/favicon.png" type="image/png" />
+
+        <link rel="stylesheet" href="./ionicons.min.css" type="text/css" />
+        <link rel="stylesheet" href="./style.global.css" type="text/css" />
+
+        <script type="text/javascript" src="./js/libs/jquery-3.6.0.min.js"></script>
+        <script type="module" src="./js/init.js"></script>
+    </head>
+    <body>
+        <main>
+
+            <section id="overlay">
+                <table id="leaderboard"></table>
+            </section>
+
+            <section id="setupPanel" class="hidden">
+                <div id="setup"></div> <!-- filled with TypeScript elements -->
+
+                <div id="setupMedia">
+                    <a href="https://twitter.com/HyldraZolxyOff" class="media ion-social-twitter">
+                        <p id="twitter">My Twitter account !</p>
+                    </a>
+                    <a href="https://discordapp.com/users/481533074249875486" class="media ion-android-textsms"> <!-- No discord icon smh -->
+                        <p id="discord">My Discord account !</p>
+                    </a>
+                    <a href="mailto:contact@hyldrazolxy.fr" class="media ion-android-mail">
+                        <p id="mail">My Email !</p>
+                    </a>
+                    <a href="https://github.com/HyldraZolxy" class="media ion-social-github">
+                        <p id="github">My GitHub account !</p>
+                    </a>
+                    <a href="https://ko-fi.com/hyldrazolxy" class="media ion-card">
+                        <p id="koFi">If you want to support me 💖</p>
+                    </a>
+                </div>
+
+                <div id="setupMenu">
+                    <button type="button" class="closeButton ion-android-close" title="Close"></button>
+
+                    <nav>
+                        <ul>
+                            <li class="generalSettings">
+                                <div class="icon ion-android-settings"></div>
+                                <p class="description">General Settings</p>
+                            </li>
+                            <li class="leaderboardSettings">
+                                <div class="icon ion-stats-bars"></div>
+                                <p class="description">Leaderboard Settings</p>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div id="setupURL">
+                        <div class="media ion-link">
+                            <p id="Urldescription" data-clipboardtext="https://testmpplus.hyldrazolxy.fr/">
+                                Click to copy the link !
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="BSOVersion">Leaderboard v0.9.4</div>
+                </div>
+            </section>
+
+            <button type="button" id="setupButton" class="ion-android-settings" title="Open settings"></button>
+        </main>
+    </body>
+</html>

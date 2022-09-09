@@ -1,0 +1,16 @@
+{
+    "name": "Multiplayer-Overlay",
+    "version": "0.9.4",
+    "description": "Multiplayer Overlay for Beat Saber who use Multiplayer+ from BeatSaber+ mod by HardCPP",
+    "main": "init.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc --build"
+    },
+    "author": "Hyldra Zolxy",
+    "license": "ISC",
+    "type": "module",
+    "devDependencies": {
+        "@types/jquery": "^3.5.14"
+    }
+}

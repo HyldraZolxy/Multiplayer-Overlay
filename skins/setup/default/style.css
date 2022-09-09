@@ -1,0 +1,234 @@
+/* ==========================
+   = SETUP PANEL TAGS start =
+   ========================== */
+
+/* ===================================
+   = SETUP PANEL TAGS / Switch start =
+   =================================== */
+#switchLabel {
+    top: 10px;
+    right: calc(30% + 110px);
+
+    position: absolute;
+
+    line-height: 24px;
+
+    font-size: 0.7em;
+}
+
+.switch {
+    width: 50px;
+    height: 24px;
+    top: 10px;
+    right: calc(30% + 50px);
+
+    display: inline-block;
+
+    position: absolute;
+
+    z-index: 1;
+}
+
+.switch input {
+    width: 0;
+    height: 0;
+
+    opacity: 0;
+}
+
+.slider {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    position: absolute;
+
+    background-color: #f59898;
+
+    cursor: pointer;
+
+    transition-duration: 200ms;
+}
+
+.slider:before {
+    content: "";
+
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+
+    position: absolute;
+
+    background-color: #d36868;
+
+    transition-duration: 200ms;
+}
+
+input:checked + .slider {
+    background-color: #34dbae;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: #1ab48b;
+}
+
+.slider.round {
+    border-radius: 26px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+/* =================================
+   = SETUP PANEL TAGS / Switch end =
+   ================================= */
+
+/* ===================================
+   = SETUP PANEL TAGS / Module start =
+   =================================== */
+#module {
+    width: 95%;
+    height: 80%;
+
+    overflow: auto;
+}
+
+#module label {
+    width: 100%;
+    padding: 4% 5%;
+
+    display: inline-block;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+}
+
+#module label span {
+    width: 100%;
+    padding-bottom: 5px;
+    display: inline-block;
+
+    font-weight: bold;
+}
+
+#module label p {
+    display: inline-block;
+
+    font-weight: bold;
+}
+
+#module label .switch {
+    top: 25%;
+    right: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+#module .ion-ios-help-outline {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#module input[type="text"] {
+    width: 70%;
+
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+    background: none;
+
+    line-height: 2em;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#module input[type="text"]:focus {
+    border: none;
+    border-bottom: 1px solid rgba(52, 219, 174, 1);
+
+    background: none;
+
+    outline: none;
+}
+
+#module input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#module input[type="button"] {
+    width: 25%;
+    padding: 5px;
+
+    float: right;
+
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 5px;
+
+    line-height: 1.5em;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    cursor: pointer;
+}
+
+#module input[type="button"]:hover {
+    border: 1px solid rgba(168, 231, 179, 1);
+    background-color: rgb(114, 213, 186);
+
+    color: rgb(91, 91, 91);
+}
+
+#module select {
+    width: 100%;
+
+    margin-bottom: 10px;
+    padding: 5px 10px;
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(227, 227, 227, 0.5);
+    outline: none;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#module select:focus {
+    color: rgb(91, 91, 91);
+}
+
+#module input[type="range"] {
+    width: 100%;
+}
+
+.blurredBackground {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    position: absolute;
+
+    border-radius: 5px;
+
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.25);
+
+    z-index: -1;
+}
+/* =================================
+   = SETUP PANEL TAGS / Module end =
+   ================================= */
+
+/* ========================
+   = SETUP PANEL TAGS end =
+   ======================== */

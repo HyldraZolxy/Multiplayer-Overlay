@@ -1,0 +1,141 @@
+#leaderboard {
+    width: 97.4vw;
+    height: 63.9vh;
+    margin-top: 19.5vh;
+    margin-left: 1.32vw;
+
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+tr {
+    width: 49.2%;
+    height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    transition-duration: 0.5s;
+}
+
+.position {
+    display: none;
+}
+
+.avatar {
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: 2px solid rgb(29, 224, 204);
+}
+.avatar, .innerAvatar {
+    width: 50px;
+    height: 50px;
+
+    background-image: url("https://cdn.scoresaber.com/avatars/oculus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 50%;
+}
+
+.pseudo {
+    margin-top: 25px;
+    margin-left: 10px;
+
+    filter: drop-shadow(0px 1px 2px #000);
+    text-shadow: 0px 0 3px #000;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.score {
+    bottom: -8vh;
+    right: 0px;
+
+    position: absolute;
+
+    font-size: 1.32em;
+    color: #ffd500;
+
+    transition-duration: 0.5s;
+    transform-origin: bottom right;
+}
+
+#leaderboard > tr:last-of-type .score {
+    left: 0px;
+    transform-origin: bottom left;
+}
+
+.percentage {
+    bottom: -6vh;
+    right: 0px;
+
+    position: absolute;
+    font-weight: bold;
+
+    filter: drop-shadow(0px 1px 2px #000);
+    font-size: 2.5em;
+}
+
+.percentage:after {
+    content: "%";
+}
+
+#leaderboard > tr:last-of-type .percentage {
+    left: 0px;
+    transform-origin: bottom left;
+}
+
+.fcMiss {
+    bottom: 20px;
+    right: 20px;
+
+    position: absolute;
+    font-weight: bold;
+
+    filter: drop-shadow(0px 1px 2px #000);
+    font-size: 1.3em;
+}
+
+#leaderboard > tr:last-of-type .fcMiss {
+    left: 20px;
+    transform-origin: bottom left;
+}
+
+.barPercentage {
+    width: 100%;
+    height: 10px;
+
+    bottom: 0;
+    position: absolute;
+}
+
+.barToPercentage {
+    width: 0;
+    height: 100%;
+
+    background-color: white;
+
+    float: right;
+    transition-duration: 0.5s;
+    transform-origin: bottom right;
+}
+
+#leaderboard > tr:last-of-type .barToPercentage {
+    float: left;
+    transform-origin: bottom left;
+}
+
+@keyframes missColor {
+    0% {}
+
+    30% {
+        box-shadow: 0 0 80px rgb(238, 82, 66);
+    }
+
+    80% {
+        box-shadow: 0 0 80px rgb(238, 82, 66) inset;
+    }
+
+    100% {}
+}

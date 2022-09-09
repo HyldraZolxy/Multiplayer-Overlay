@@ -1,0 +1,60 @@
+<span id="switchLabel">Preview</span>
+<label class="switch">
+    <input type="checkbox" id="switchLeaderboardPreview" title="Switch On/Off Preview">
+    <span class="slider round"></span>
+</label>
+
+<div id="module">
+    <label for="leaderboardSkin">
+        <div class="blurredBackground"></div>
+        <span>Skin:
+            <a href="#" class="ion-ios-help-outline" title="This is to change the skin of the leaderboard"></a>
+        </span>
+        <select id="leaderboardSkin" name="leaderboardSkin">
+            <option value="">-- Please choose an option --</option>
+            <option value="default">Default</option>
+            <option value="tournamentDuo">Tournament Duo</option>
+        </select>
+    </label>
+
+    <label for="leaderboardPosition">
+        <div class="blurredBackground"></div>
+        <span>Position:
+            <a href="#" class="ion-ios-help-outline" title="This is to change the position of the leaderboard"></a>
+        </span>
+        <select id="leaderboardPosition" name="leaderboardPosition">
+            <option value="">-- Please choose an option --</option>
+            <option value="top-left">Top-left</option>
+            <option value="top-right">Top-right</option>
+            <option value="bottom-left">bottom-left</option>
+            <option value="bottom-right">bottom-right</option>
+        </select>
+    </label>
+
+    <label for="leaderboardScale">
+        <div class="blurredBackground"></div>
+        <span>Scale:
+            <a href="#" class="ion-ios-help-outline" title="This is to change the scale of the leaderboard"></a>
+        </span>
+        <input type="range" min="0.50" max="1.70" step="0.01" id="leaderboardScale" />
+    </label>
+
+    <label for="leaderboardPlayerRender">
+        <div class="blurredBackground"></div>
+        <span>Player rendering: (<p class="playerRenderingNumber">5</p>)
+            <a href="#" class="ion-ios-help-outline" title="This is to change the number of the player rendering leaderboard"></a>
+        </span>
+        <input type="range" min="1" max="30" step="1" value="5" id="leaderboardPlayerRender" />
+    </label>
+
+    <label for="leaderboardTournamentMode">
+        <div class="blurredBackground"></div>
+        <span>Tournement mode:
+            <a href="#" class="ion-ios-help-outline" title="This is to turn on or off the tournement mode of the leaderboard"></a>
+        </span>
+        <div class="switch">
+            <input type="checkbox" id="leaderboardTournamentMode" title="Switch On/Off Tournement mode">
+            <span class="slider round"></span>
+        </div>
+    </label>
+</div>
